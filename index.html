@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Image Gallery🖼️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="gallery-container">
+
+        <!-- Heading -->
+        <h1>My Image Gallery🖼️ </h1>
+
+        <p class="subtitle">
+            Explore beautiful moments✨
+        </p>
+
+
+        <!-- Category Filters -->
+        <div class="filters">
+
+            <button class="filter-btn active" data-category="all">
+                All💫
+            </button>
+
+            <button class="filter-btn" data-category="travel">
+                Travel✈️
+            </button>
+
+            <button class="filter-btn" data-category="nature">
+                Nature🌿
+            </button>
+
+            <button class="filter-btn" data-category="flower">
+                Flowers🌸
+            </button>
+
+            <button class="filter-btn" data-category="bird">
+                Birds🐦
+            </button>
+
+            <button class="filter-btn" data-category="animal">
+                Animals🐾 
+            </button>
+
+        </div>
+        
+        <!--Add Image Button-->
+        <button id="addImageBtn" class="add-image-btn">
+        ➕ Add Image
+        </button>
+
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+
+            <!-- TRAVEL - 6 IMAGES -->
+
+            <div class="gallery-item" data-category="travel">
+                <img src="images/travel1.jpg" alt="Travel Image 1">
+            </div>
+
+            <div class="gallery-item" data-category="travel">
+                <img src="images/travel2.jpg" alt="Travel Image 2">
+            </div>
+
+            <div class="gallery-item" data-category="travel">
+                <img src="images/travel3.jpg" alt="Travel Image 3">
+            </div>
+
+            <div class="gallery-item" data-category="travel">
+                <img src="images/travel4.jpg" alt="Travel Image 6">
+            </div>
+
+
+            <!-- NATURE - 4 IMAGES -->
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature1.jpg" alt="Nature Image 1">
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature2.jpg" alt="Nature Image 2">
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature3.jpg" alt="Nature Image 3">
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature4.jpg" alt="Nature Image 4">
+            </div>
+
+
+            <!-- FLOWER - 4 IMAGES -->
+
+            <div class="gallery-item" data-category="flower">
+                <img src="images/flower1.jpg" alt="Flower Image 1">
+            </div>
+
+            <div class="gallery-item" data-category="flower">
+                <img src="images/flower2.jpg" alt="Flower Image 2">
+            </div>
+
+            <div class="gallery-item" data-category="flower">
+                <img src="images/flower3.jpg" alt="Flower Image 3">
+            </div>
+
+            <div class="gallery-item" data-category="flower">
+                <img src="images/flower4.jpg" alt="Flower Image 4">
+            </div>
+
+
+            <!-- BIRD - 4 IMAGES -->
+
+            <div class="gallery-item" data-category="bird">
+                <img src="images/bird1.jpg" alt="Bird Image 1">
+            </div>
+
+            <div class="gallery-item" data-category="bird">
+                <img src="images/bird2.jpg" alt="Bird Image 2">
+            </div>
+
+            <div class="gallery-item" data-category="bird">
+                <img src="images/bird3.jpg" alt="Bird Image 3">
+            </div>
+
+            <div class="gallery-item" data-category="bird">
+                <img src="images/bird4.jpg" alt="Bird Image 4">
+            </div>
+
+
+            <!-- ANIMAL - 6 IMAGES -->
+
+            <div class="gallery-item" data-category="animal">
+                <img src="images/animal1.jpg" alt="Animal Image 1">
+            </div>
+
+            <div class="gallery-item" data-category="animal">
+                <img src="images/animal2.jpg" alt="Animal Image 2">
+            </div>
+
+            <div class="gallery-item" data-category="animal">
+                <img src="images/animal3.jpg" alt="Animal Image 3">
+            </div>
+
+            <div class="gallery-item" data-category="animal">
+                <img src="images/animal4.jpg" alt="Animal Image 4">
+            </div>
+
+            <div class="gallery-item" data-category="animal">
+                <img src="images/animal5.jpg" alt="Animal Image 5">
+            </div>
+
+            <div class="gallery-item" data-category="animal">
+                <img src="images/animal6.jpg" alt="Animal Image 6">
+            </div>
+
+        </div>
+
+    </div>
+
+
+     <!-- Add Image Form -->
+
+<div class="add-image-box" id="addImageBox">
+
+    <h2>➕ Add Your Image</h2>
+
+    <input type="file" id="imageInput" accept="image/*">
+
+    <select id="imageCategory">
+
+        <option value="travel">Travel✈️</option>
+        <option value="nature">Nature🌿</option>
+        <option value="flower">Flowers🌸</option>
+        <option value="bird">Birds🐦</option>
+        <option value="animal">Animals🐾</option>
+
+    </select>
+
+    <div class="add-image-actions">
+
+        <button id="saveImageBtn">
+            Add Image
+        </button>
+
+        <button id="cancelImageBtn">
+            Cancel
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="close-btn" id="closeBtn">
+            &times;
+        </button>
+
+        <button class="prev-btn" id="prevBtn">
+            &#10094;
+        </button>
+
+        <img id="lightboxImage" src="" alt="Gallery Image">
+
+        <button class="next-btn" id="nextBtn">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
